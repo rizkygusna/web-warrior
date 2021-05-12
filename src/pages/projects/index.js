@@ -18,7 +18,7 @@ export default function Projects({ data }) {
         <div className={styles.projects}>
           {projects.map(node => (
             //add link to project details
-            <Link to={"/projects/" + node.frontmatter.slug} key={projects.id}>
+            <Link to={"/projects/" + node.frontmatter.slug} key={node.id}>
               <div>
                 {/* add project thumbnail */}
                 <GatsbyImage
