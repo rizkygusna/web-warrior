@@ -28,6 +28,9 @@ p {
 .layout {
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 nav {
   display: grid;
@@ -48,6 +51,12 @@ nav a {
 nav a:hover {
   border-color: white;
 }
+
+.content {
+  /* so the footer stays at bottom */
+  flex-grow: 1;
+}
+
 footer p {
   text-align: center;
   color: #bbb;
