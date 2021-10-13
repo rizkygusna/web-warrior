@@ -33,9 +33,9 @@ p {
   flex-direction: column;
 }
 nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
+  display: flex;
+  margin: 2em 0;
+  justify-content: space-between;
 }
 nav .links {
   display: inline-block;
